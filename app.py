@@ -19,16 +19,14 @@ def base():
 def restaurants():
     return render_template("restaurants/restaurant.html")
 
-<<<<<<< Updated upstream
+
 @app.route("/hotel")
 def hotel():
     return render_template("hotels/hotel.html")
-=======
+
 @app.route("/nav/")
 def nav():
     return render_template("./partial/navBar.html")
->>>>>>> Stashed changes
-
 if __name__ == "__main__":
     app.run(debug=True, port=3000)
 
