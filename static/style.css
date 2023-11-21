@@ -1,7 +1,7 @@
 @media only screen and (min-width: 600px) {
 .img1{
-width: 100%
-height: 50%
+width: 100%;
+height: 50%;
 background-image: url(../images/pexels-life-of-pix-67468.jpg);
 background-repeat: no-repeat;
 background-size: cover;
@@ -11,4 +11,166 @@ background-size: cover;
 
 @media only screen and (max-width: 600px) {
 
+
 }
+
+/* css hotel */
+
+
+
+.cadre{
+
+    display: flex;
+    height: 450px;
+    width: 100%;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cadre1
+{
+    display: flex;
+    height: 400px;
+    width: 98%;
+    border: 1px solid red;
+    align-items: center;
+    
+}
+
+.sous_cadre
+{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 100%;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 10px;
+    
+}
+
+.sous_cadre_gauche
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 80%;
+  border: 1px solid red;
+  font-size: 160%;
+  
+}
+
+.ss_c
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    flex-direction: row;
+    border: 1px solid red;
+    
+
+}
+
+.sous_cadre_droite
+{
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  font-size: 160%;
+  width: 15%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 100%;
+  
+}
+
+.affiche_hotel
+{
+   display: flex;
+   margin-top: 10px;
+   width: 100%;
+   height: 600px;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: row;
+   border: 1px purple solid;
+}
+
+.affiche_hotel1
+{
+   display: flex;
+   width: 30%;
+   height: 95%;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+   border: 1px red solid;
+}
+
+.affiche_hotel1-1
+{
+  display: flex;
+  width: 90%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+.affiche_hotel1-2
+{
+  display: flex;
+  width: 90%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+.affiche_hotel1-3
+{
+  display: flex;
+  width: 90%;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.affiche_hotel1-4
+{
+  display: flex;
+  width: 90%;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+.affiche_hotel2
+{
+   display: flex;
+  
+   width: 30%;
+   height: 95%;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+   border: 1px red solid;
+}
+.affiche_hotel3
+{
+   display: flex;
+  
+   width: 30%;
+   height: 95%;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+   border: 1px red solid;
+}
+/* fin css hotel */
