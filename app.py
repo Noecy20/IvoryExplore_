@@ -6,6 +6,11 @@ app = Flask(__name__)
 def bienvenue():
     return render_template("bienvenu.html")
 
+
+@app.route('/accueil/')
+def accueil():
+    return render_template("accueil.html")
+
 @app.route("/base")
 def base():
     return render_template("base.html")
@@ -14,9 +19,15 @@ def base():
 def restaurants():
     return render_template("restaurants/restaurant.html")
 
+<<<<<<< Updated upstream
 @app.route("/hotel")
 def hotel():
     return render_template("hotels/hotel.html")
+=======
+@app.route("/nav/")
+def nav():
+    return render_template("./partial/navBar.html")
+>>>>>>> Stashed changes
 
 if __name__ == "__main__":
     app.run(debug=True, port=3000)
