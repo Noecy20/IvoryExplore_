@@ -9,6 +9,9 @@ def bienvenue():
 @app.route("/base")
 def base():
     return render_template("base.html")
+@app.route("/restaurants")
+def restaurants():
+    return render_template("restaurants/restaurant.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
