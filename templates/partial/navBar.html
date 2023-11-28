@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='./style.css')}}">
 </head>
 <body>
+
+    <header>
+        <div class="logo">
+           <img src="../../static/images/logo-removebg-preview.png" alt="logo" width="50%">
+        </div>
+
+        <div class="nav">
+            <li><a href="#">Hôtel</a></li>
+            <li><a href="#">Restaurant</a></li>
+            <li><a href="#">Film</a></li>
+            <li><a href="#">Ecole</a></li>
+            <div class="input-box">
+                <input type="text" placeholder="Search...">
+                <span class="icon">
+                    <i class="uil uil-search search-icon"></i>
+                </span>
+                <i class="uil uil-times close-icon"></i>
+            </div>
+            <img src="../static/images/profile.png" width="7%" alt="profil">
+        </div>
+        <script>
+            let inputBox = document.querySelector(".input-box"),
+                searchIcon = document.querySelector(".icon"),
+                closeIcon = document.querySelector(".close-icon");
+            searchIcon.addEventListener("click", () => inputBox.classList.add("open"));
+            closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));
+        </script>
+    </header>
+
 
 </body>
 </html>
