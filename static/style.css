@@ -3,8 +3,8 @@
 
 @media only screen and (min-width: 600px) {
 .img1{
-width: 100%
-height: 50%
+width: 100%;
+height: 50%;
 background-image: url(../images/pexels-life-of-pix-67468.jpg);
 background-repeat: no-repeat;
 background-size: cover;
@@ -12,6 +12,7 @@ background-size: cover;
 .tail_img1 img{
 width: 100%;
 height: 100%;
+}
 }
 .restSection1{
 width: 100%;
@@ -36,19 +37,20 @@ font-family: 'Montserrat', sans-serif;
 .cadre{
 
     display: flex;
-    height: 450px;
+    height: 600px;
     width: 100%;
     border: 1px solid red;
     align-items: center;
     justify-content: center;
+    
     
 }
 
 .cadre1
 {
     display: flex;
-    height: 400px;
-    width: 98%;
+    height: 98%;
+    width: 95%;
     border: 1px solid red;
     align-items: center;
     
@@ -121,8 +123,8 @@ font-family: 'Montserrat', sans-serif;
 .affiche_hotel1
 {
    display: flex;
-   width: 30%;
-   height: 95%;
+   width: 25%;
+   height: 75%;
    align-items: center;
    justify-content: space-around;
    flex-direction: column;
@@ -170,8 +172,8 @@ font-family: 'Montserrat', sans-serif;
 {
    display: flex;
   
-   width: 30%;
-   height: 95%;
+   width: 25%;
+   height: 75%;
    align-items: center;
    justify-content: space-around;
    flex-direction: column;
@@ -180,12 +182,118 @@ font-family: 'Montserrat', sans-serif;
 .affiche_hotel3
 {
    display: flex;
-  
-   width: 30%;
-   height: 95%;
+   width: 25%;
+   height: 75%;
    align-items: center;
    justify-content: space-around;
    flex-direction: column;
    border: 1px red solid;
+}
+
+.form
+{
+    width: 60%;
+    height: 100%;
+    border: 1px peru solid;
+}
+
+
+.div_jauge
+{
+  display: flex;
+  border: 1px green solid;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+}
+
+.jauge
+{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 20%;
+  border-radius: 10px;
+  cursor:auto;
+  color:orange;
+  transition: 0.5s;
+  border: 1px green solid;
+  align-items: center;
+  justify-content: center;
+
+}
+.j1 
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 35%;
+  margin-bottom: 5%;
+  align-items: center;
+}
+.j2
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 35%;
+
+}
+.choix
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+  height: 30%;
+  border: 1px green solid;
+  
+}
+.c1
+{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: 30%;
+}
+.c2
+{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: 30%;
+}
+.sous_cadre_jauge
+{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width:60%;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 10px;
+}
+.droite
+{
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  width: 100%;
+  border: 1px solid red;
+  align-items: center;
+  justify-content: space-between; 
+  margin-top: 10px;
+}
+.sous_D
+{
+  display: flex;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  border: 1PX red solid;
 }
 /* fin css hotel */

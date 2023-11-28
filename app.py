@@ -18,6 +18,10 @@ def restaurants():
 def hotel():
     return render_template("hotels/hotel.html")
 
+@app.route("/hoteltrie")
+def hoteltrie():
+    return render_template("hotels/hoteltrie.html")
+
 if __name__ == "__main__":
     app.run(debug=True, port=3000)
 
