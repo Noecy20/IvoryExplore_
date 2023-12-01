@@ -3,10 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Ivory Explore</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="stylesheet" href="/static/initialize.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='initialize.css')}}">
+    <style>:
+.BienvenuSect{
+width: 100%;
+height: 700px;
+background-color: #066D84;
+position: relative;
+}
+.homepage {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url("images/home-bg.jpg");
+  background-position: center 65%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.homepage::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.homepage .content {
+  display: flex;
+  height: 85%;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.homepage .content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.homepage .content .text {
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+    </style>
 </head>
 <body>
 <a href="{{url_for('accueil')}}">restaurants</a>
+<section class="BienvenuSect">
+<section class="homepage" id="home">
+      <div class="content">
+          <br><br><br><br><br><br><br>
+          <img src="../static/images/logo-removebg-preview.png" width="30%" alt="">
+          <div class="text">
+          <p>
+            UNE NAVIGUATION IMPECCABLE POUR UNE  EXPERIENCE OPTIMALE.</p>
+        </div>
+      </div>
+
+    </section>
+</section>
 </body>
 </html>
