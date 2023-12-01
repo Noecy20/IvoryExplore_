@@ -1,23 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurants</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="stylesheet" href="/static/initialize.css">
+{%extends 'base.html'%}
 
-</head>
-<body>
+{%block centre%}
 <div class="tail_img1">
-    <img src="./static/images/pexels-lisa-fotios-776538.jpg" alt="no">
 </div>
-<section class="restSection1">
-    <div>
-        <h3>VOIR D'AUTRES <br>
-            PROPOSITIONS</h3>
+<div class="card-list">
+        <div class="card-item">
+            <ul class="images ">
+        <li class="img"><img src="./static/images/pexels-lisa-fotios-776538.jpg" alt="img"></li>
+              </ul>
+            <span class="developer">Developer</span>
+            <h3>A "developer" codes software and websites.</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </div>
+        <div class="card-item">
+            <ul class="images">
+        <li class="img"><img src="./static/images/pexels-lisa-fotios-776538.jpg" alt="img"></li>
+              </ul>
+            <span class="designer">Designer</span>
+            <h3>A "designer" is a design expert.</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </div>
+        <div class="card-item">
+              <ul class="images">
+        <li class="img"><img src="./static/images/pexels-lisa-fotios-776538.jpg" alt="img"></li>
+              </ul>
+                 <div class="content">
+               <div class="title">
+                  Briana Tozour
+               </div>
+               <div class="sub-title">
+                  Graphic Designer
+               </div>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
+               </p>
+        </div>
     </div>
-    <div></div>
-</section>
-</body>
-</html>
+
+    <div class="lightbox">
+      <div class="wrapper">
+        <header>
+          <div class="details">
+            <span>Nom du Restaurant</span>
+          </div>
+          <div class="buttons"><i class="fa-solid fa-xmark " id="close-icon"></i></div>
+        </header>
+        <div class="preview-img">
+          <div class="img"><img src="" alt="preview-img"></div>
+        </div>
+      </div>
+    </div>
+
+{%endblock centre%}
