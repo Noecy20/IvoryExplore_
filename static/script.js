@@ -18,3 +18,6 @@ closeImgBtn.addEventListener("click", () => {
     lightbox.classList.remove("show");
     document.body.style.overflow = "auto";
 });
+
+
+

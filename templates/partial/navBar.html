@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="{{url_for('static', filename='./style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 <body>
 
@@ -25,17 +26,64 @@
                 </span>
                 <i class="uil uil-times close-icon"></i>
             </div>
-            <img src="../static/images/profile.png" width="7%" alt="profil">
         </div>
-        <script>
-            let inputBox = document.querySelector(".input-box"),
-                searchIcon = document.querySelector(".icon"),
-                closeIcon = document.querySelector(".close-icon");
-            searchIcon.addEventListener("click", () => inputBox.classList.add("open"));
-            closeIcon.addEventListener("click", () => inputBox.classList.remove("open"));
-        </script>
+
+
+
+
+
+    </div>
+        
+    <div class="action">
+      <div class="profile" onclick="menuToggle();">
+          <img src="../static/images/profile.png" alt="">
+      </div>
+
+
+    
+      <div class="menu">
+          <h3>
+              <div>
+                <i class="fa-regular fa-bell fa-shake fa-xl"></i>notification
+              </div>
+          </h3>
+          
+          <ul>
+            <div class="user-img">
+              <img src="../static/images/profile.png" width="50px" id="photo">
+              <input type="file" id="file">
+              <label for="file" id="uploadbtn"><i class="fa-solid fa-camera" style="color: #292929;"></i></label>
+            </div>
+
+
+              <div class="identifiant">
+                <li>
+                  Konan jean <br>
+                  konanjean@gmail.com
+                </li>
+              </div>
+             
+              <li>
+                <a href="#"><i class="fa-solid fa-pen-to-square" style="color: #314972;"></i>Modifier </a> <br>
+                <a href="#"><i class="fa-solid fa-circle-user" style="color: #021a40;"></i>Modifier mon compte</a> <br>
+              </li>
+               <li>
+                  <p>Contactez-nous</p>
+                  <a href="#"><i class="fa-brands fa-whatsapp" style="color: #0f2d61;"></i>+225070707070707 </a> <br>
+                  <a href="#"><i class="fa-brands fa-instagram" style="color: #1b3055;"></i>ivoiry Explore</a> <br>
+                   <a href="#"><i class="fa-regular fa-envelope"></i> ivoryeplore@gmail.com</a> <br>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>   Quitter/Se déconnecter</a> <br>
+                <a href="#"><i class="fa-regular fa-trash-can"></i>Supprimer</a>
+              </li> 
+              
+           </ul>
+      </div>
+  </div>
+
     </header>
-
-
 </body>
+
+<script src="/static/js/script.js"></script>
 </html>
